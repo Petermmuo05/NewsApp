@@ -19,3 +19,27 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar for Webkit-based browsers (Chrome, Safari) */
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.cool-button {
+  transition: transform 0.3s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+
+
+}
+/* Apply the animations on hover and active states */
+.cool-button:hover {
+  transform: scale(1.1); /* Scale up on hover */
+}
+
+.cool-button:active {
+  transform: scale(0.9); /* Optional: Scale down slightly when active */
+}
